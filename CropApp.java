@@ -27,12 +27,58 @@ public class CropApp {
 
             else if(choice == 2){
                 System.out.println("\n--- Buy Crops ---\n");
-                
+                System.out.println("1. Buy Rice");
+                System.out.println("2. Buy Eggplant");
+                System.out.println("3. Buy Corn");
+                System.out.println("4. Buy Sugarcane");
+                System.out.print("Select an option: ");
+                int cropChoice = scanner.nextInt();
+                scanner.nextLine();
+                if(cropChoice == 1){
+                    System.out.println("You have selected Rice");
+                    System.out.println("Price: 1000 per sack");
+                }
+                else if(cropChoice == 2){
+                    System.out.println("You have selected Eggplant");
+                    System.out.println("Price: 500 per sack");
+                }
+                else if(cropChoice == 3){
+                    System.out.println("You have selected Corn");
+                    System.out.println("Price: 800 per sack");
+                }
+                else if(cropChoice == 4){
+                    System.out.println("You have selected Sugarcane");
+                    System.out.println("Price: 1200 per sack");
+                }
+                else{
+                    System.out.println("Invalid option selected.");
+                }
                 
             }
 
             else if(choice == 3){
                 System.out.println("\n--- Buy Fertilizers ---\n");
+                System.out.println("1. Buy UREA");
+                System.out.println("2. Buy NPK");
+                System.out.println("3. Buy MURIATE OF POTASH");
+                System.out.print("Select an option: ");
+                int fertChoice = scanner.nextInt();
+                scanner.nextLine();
+                if(fertChoice == 1){
+                    System.out.println("You have selected UREA");
+                    System.out.println("Price: 500 per bag");
+                }
+                else if(fertChoice == 2){
+                    System.out.println("You have selected NPK");
+                    System.out.println("Price: 600 per bag");
+                }
+                else if(fertChoice == 3){
+                    System.out.println("You have selected MURIATE OF POTASH");
+                    System.out.println("Price: 550 per bag");
+                }
+                else{
+                    System.out.println("Invalid option selected.");
+                }
                 
                 
             }
@@ -65,6 +111,32 @@ public class CropApp {
 
             else if(choice == 5){
                 System.out.println("\n--- Labor payment ---\n");
+                System.out.println("1. Pay Labor for Rice");
+                System.out.println("2. Pay Labor for Eggplant");
+                System.out.println("3. Pay Labor for Corn");
+                System.out.println("4. Pay Labor for Sugarcane");
+                System.out.print("Select an option: ");
+                int laborChoice = scanner.nextInt();
+                scanner.nextLine();
+                if(laborChoice == 1){
+                    System.out.println("You have selected Rice");
+                    System.out.println("Labor Payment: 2000 per acre");
+                }
+                else if(laborChoice == 2){
+                    System.out.println("You have selected Eggplant");
+                    System.out.println("Labor Payment: 1500 per acre");
+                }
+                else if(laborChoice == 3){
+                    System.out.println("You have selected Corn");
+                    System.out.println("Labor Payment: 1800 per acre");
+                }
+                else if(laborChoice == 4){
+                    System.out.println("You have selected Sugarcane");
+                    System.out.println("Labor Payment: 2200 per acre");
+                }
+                else{
+                    System.out.println("Invalid option selected.");
+                }
                 
                 
             }
@@ -73,6 +145,7 @@ public class CropApp {
                 System.out.println("\n--- Exit ---\n");
                 scanner.close();
                 break;
+    
                 
             }
 
